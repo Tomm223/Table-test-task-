@@ -1,0 +1,50 @@
+.block,
+.block_1,
+.block_2,
+.block_3 {
+   border-radius: 10px;
+   padding: 6px 6px;
+   width: 32px;
+   display: flex;
+   justify-content: start;
+   overflow: hidden;
+   transition: all .5s ease;
+
+   &:hover {
+      background-color: #414144;
+   }
+}
+
+.block_1:hover {
+   width: 100px;
+}
+
+.block_2:hover {
+   width: 100px;
+}
+
+.block_3:hover {
+   width: 65px;
+}
+
+.list {
+   display: flex;
+   justify-content: start;
+}
+
+.item {
+   display: flex;
+   align-items: center;
+   padding: 0 6px;
+
+
+}
+
+.btn {
+   width: auto;
+   height: auto;
+   cursor: pointer;
+   padding: 0;
+}
+
+.img {}

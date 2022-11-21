@@ -1,0 +1,48 @@
+@import '../../../assets/styles/variable.scss';
+
+.header {}
+
+.nav {
+   display: flex;
+   background-color: $backgroundMenu;
+   width: 100%;
+   height: auto;
+   padding: 0 25px;
+   border-bottom: $border;
+   margin: 0;
+
+   &__item {
+      cursor: pointer;
+      margin: 0;
+      width: auto;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      margin-right: 25px;
+      border-bottom: 2px solid $backgroundMenu;
+      color: $supText;
+
+      &:last-child {
+         margin: 0;
+      }
+
+      &:hover {
+         color: #fff;
+         border-bottom: 2px solid $btnActive;
+      }
+   }
+
+   &__img {}
+
+   &__p {
+      color: inherit;
+   }
+}
+
+.svg {
+   fill: $btn ;
+
+   &:hover {
+      fill: $btnActive;
+   }
+}

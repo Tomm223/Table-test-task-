@@ -1,0 +1,36 @@
+@import '../../../assets/styles/variable.scss';
+
+.overflow {
+   width: 100%;
+   height: 100%;
+   overflow-y: auto;
+   overflow-x: auto;
+   background-color: $backgroundMain;
+}
+
+.list {
+   width: auto;
+}
+
+.btn_start {
+   width: 100%;
+   height: 40px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border: 1px solid black;
+   background-color: rgba($color: $supText, $alpha: .2);
+   transition: all 0.5s ease;
+   cursor: pointer;
+
+   &:hover {
+      background-color: rgba($color: $supText, $alpha: .7);
+   }
+}
+
+@media screen and (max-width:1048px) {
+   .overflow {
+      overflow-y: auto;
+   }
+
+}

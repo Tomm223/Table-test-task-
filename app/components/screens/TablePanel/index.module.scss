@@ -1,0 +1,125 @@
+@import '../../../assets/styles/variable.scss';
+
+.header {
+   width: 100%;
+   height: 44px;
+   display: grid;
+   grid-template-columns: 235px 1fr;
+   border-bottom: $border;
+   background-color: $backgroundMenu;
+}
+
+.left {
+   cursor: pointer;
+   display: flex;
+   justify-content: space-between;
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   padding-left: 20px;
+   padding-right: 8px;
+   border-right: $border;
+   color: $supText;
+
+   &:hover {
+      color: #fff;
+
+      .left__arrow_item {
+         fill: #fff;
+      }
+   }
+
+   &__p {
+      color: inherit;
+      font-size: 14px;
+      font-weight: 400;
+   }
+
+   &__title {
+      color: inherit;
+      display: flex;
+      flex-wrap: nowrap;
+   }
+
+   &__sup {
+      color: $supText;
+      font-size: 10px;
+   }
+
+   &__arrow,
+   &__arrow_active {
+      transition: all .5s ease;
+   }
+
+   &__arrow {
+      transform: rotate(180deg);
+   }
+
+   &__arrow_active {
+      transform: rotate(0deg);
+   }
+
+   &__arrow_item {
+      fill: $supText;
+   }
+
+}
+
+.right {
+   height: 100%;
+
+   &__item {
+      display: inline-flex;
+      align-items: center;
+      justify-content: start;
+      height: 100%;
+      padding: 0 20px;
+      font-size: 18px;
+      max-width: 600px;
+      border-right: $border;
+   }
+}
+
+.main {
+   position: relative;
+   width: 100%;
+   height: calc(100vh - 90px);
+}
+
+.menu,
+.menu_active {
+   transition: all .5s ease;
+   position: absolute;
+   top: 0;
+   width: 235px;
+   height: 100%;
+   border-right: $border;
+}
+
+.menu {
+   left: 0%;
+}
+
+.menu_active {
+   left: 0;
+}
+
+.table,
+.table_active {
+   transition: all .5s ease;
+   position: absolute;
+   top: 0;
+   height: 100%;
+   padding: 0 10px;
+   background-color: $backgroundMain;
+}
+
+.table {
+   left: 0;
+   width: 100%;
+}
+
+.table_active {
+   width: calc(100% - 235px);
+   left: 235px;
+}
